@@ -1,0 +1,13 @@
+{
+  "name": "ca674_cloud_arch_test_app",
+  "version": "1.0.0",
+  "description": "Dockerized Node.js Application",
+  "author": "Daniel Rejniak",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
