@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+var visitCounter = 0;
 
 // Constants
 const PORT = 8090;
@@ -9,7 +10,8 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  visitCounter++;
+  res.send('Application Hase Been Visited ' + visitCounter + ' Times');
 });
 
 app.listen(PORT, HOST);
