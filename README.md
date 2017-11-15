@@ -4,10 +4,11 @@ This repository contains dockerized node js aplication.
 
 ## Build Localy
 
-Runing the conatiner localy using detached mode can ba achieved using the following command. (Useful for dev)
+Runing the conatiner localy for dev.
 
 ```
-docker run -p 49160:8090 -d <your username>/node-web-app
+npm install - Install Dependancies
+npm run - Run Application
 ```
 
 
