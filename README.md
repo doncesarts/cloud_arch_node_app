@@ -14,23 +14,17 @@ npm run - Run Application
 
 ## Push To Docker Repo
 
-Bellow are instruction to create and push docker iamge to docker hub.
+We created a shell wrapper for building and deplying the image to docker repository.
 
-Go to the directory of the application where Dockerfile is located and run the following command to build a docker image with tag.
+Note: Provide Docker username and password when prompted.
 
-```
-docker build -t <your username>/<name> .
-```
-
-Login to your docker hub.
-```
-docker login
-```
-
-Push Docker iamge to docker hub.
+simply run : 
 
 ```
-docker push <your username>/<name>
+./deploy_to_docker_repo.sh
 ```
+
+
+
 ---
 [Link to docker our docker hub repo](https://hub.docker.com/r/danielrejniak/ca674_cloud_arch_test_app/)
