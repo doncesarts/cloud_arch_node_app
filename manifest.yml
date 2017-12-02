@@ -1,0 +1,6 @@
+---
+applications:
+ - name:   samplenodejs
+   host:   samplenodejs-ca674
+   memory: 128M
+   command:  node server.js

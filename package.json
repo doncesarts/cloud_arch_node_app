@@ -4,11 +4,17 @@
   "description": "Dockerized Node.js Application",
   "author": "Daniel Rejniak",
   "main": "server.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doncesarts/cloud_arch_node_app.git"
+  },
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.13.3",
-    "os": "^0.1.1"
+    "os": "^0.1.1",
+    "cfenv": "^1.0.x"
   }
 }
