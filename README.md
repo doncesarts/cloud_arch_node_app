@@ -1,10 +1,10 @@
 ## Cloud Arch Assignment App
 
-This repository contains dockerized node js aplication.
+This repository contains a cloud foundry node js aplication.
 
 ## Build Localy
 
-Runing the conatiner localy for dev.
+Runing the cloud foundry app locally for dev.
 
 ```
 npm install - Install Dependancies
@@ -12,19 +12,25 @@ npm run - Run Application
 ```
 
 
-## Push To Docker Repo
+## Push To Clound Foundry Environment
 
-We created a shell wrapper for building and deplying the image to docker repository.
-
-Note: Provide Docker username and password when prompted.
-
-simply run : 
+We created a manifest.yml with the app configurations. 
 
 ```
-./deploy_to_docker_repo.sh
+applications:
+ - name:   samplenodejs
+   host:   samplenodejs-ca674
+   memory: 128M
+   command:  node server.js
+``` 
+
+Update the host property to be unique and push the application to a cloud foundry environment : 
+
+```
+bx cf push
 ```
 
 
 
 ---
-[Link to docker our docker hub repo](https://hub.docker.com/r/danielrejniak/ca674_cloud_arch_test_app/)
+[Link to the app running bluemix](https://samplenodejs-ca674.eu-de.mybluemix.net/hostname)
